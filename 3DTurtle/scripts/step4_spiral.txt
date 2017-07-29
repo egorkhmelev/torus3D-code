@@ -1,0 +1,105 @@
+//REFERENCE: https://forum.processing.org/two/discussion/comment/101179/#Comment_101179
+//REFERENCE: https://math.stackexchange.com/questions/1352792/how-to-derive-the-3d-equation-of-a-torus
+//REFERENCE: https://forum.processing.org/two/discussion/comment/102748/#Comment_102748
+
+drawRef
+
+//===================
+
+//Init position of turtle so it points along torus'es inner axis
+penUp
+noseDown 90
+forward 150
+right 90
+color YELLOW
+penDown
+
+drawCircle
+spiral
+
+//===================
+
+//  ***********************            *********************
+//Draw ortho vectors: X axis RED, Y axis GREEN, Z axis BLUE
+
+learn drawRef [
+pushMatrix
+color RED
+forward 25
+popMatrix
+
+pushMatrix
+color GREEN
+left 90
+forward 10
+popMatrix
+
+pushMatrix
+color BLUE
+noseDown 90
+forward 25
+popMatrix
+]
+
+//  ***********************            *********************
+//Draws a circle: Red=start Yellow=body Rose=end
+
+learn drawCircle [
+pushMatrix
+
+color RED
+repeat 125 (
+  forward 17
+  right 2
+)
+
+repeat 10 (
+color YELLOW
+forward 17
+right 2
+forward 17
+right 2
+forward 17
+right 2
+forward 17
+right 2
+//fc2
+)
+
+color ROSE
+repeat 5 (
+  forward 17
+  right 2
+)
+popMatrix
+
+]
+
+
+//  ***********************            *********************
+// Draws a spiral down
+
+learn spiral [
+
+pushMatrix
+color MAGENTA
+penUp
+rise 10
+penDown
+
+repeat 250 (
+
+forward 10
+
+right 10
+rollRight 5
+//  ++++++++  Drives it off XY plane
+//noseDown 15
+)
+
+popMatrix
+]
+
+
+
+
