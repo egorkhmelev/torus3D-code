@@ -13,6 +13,8 @@ Turtle3D/LOGO: https://forum.processing.org/two/discussion/comment/101179/#Comme
 Torus 3D parametric equation: https://math.stackexchange.com/questions/1352792/how-to-derive-the-3d-equation-of-a-torus
 Torus know discussion: https://forum.processing.org/two/discussion/comment/102748/#Comment_102748
 
-I will update a different version of the 3D Torus code made in Processing in the future.
+I added a Processing version of creating a Torus based on two vector operations. I will be interesting to generate the parametric version of this solution but that will be for another day. For the Processing version, instructions on how to run the script is provided when running the sketch.
 
 END@KF@29JUL2017
+
+
